@@ -17,10 +17,10 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          run: |
             # CML Report
-            echo "##Fashion Mnist" >> report.md
-            echo "###Confusion Matrix" >> report.md
+            echo "## Fashion Mnist" >> report.md
+            echo "### Confusion Matrix" >> report.md
             cml-publish histogram.png --md >> report.md
-            echo "###Graph Accuracy" >> report.md
+            echo "### Graph Accuracy" >> report.md
             cml-publish plot_training.png --md >> report.md
 
             cml-send-comment report.md
