@@ -1,6 +1,6 @@
-import tensorflow as tf
-from tensorflow.keras.datasets import fashion_mnist
 import numpy as np
+from tensorflow.keras.datasets import fashion_mnist
+import tensorflow as tf
 import matplotlib.pyplot as plt
 import sklearn
 import io
